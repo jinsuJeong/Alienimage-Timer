@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var counter = 1
     var myTimer = Timer()
     var direction = 1
+    var cheak = true
     
     @IBOutlet weak var myImageView: UIImageView!
     
@@ -20,15 +21,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         imageCounter.text = String(counter)
+        myImageView.image = UIImage(named: "frame1.png")//첫사진이 나오게함
     }
 
     @IBAction func btStart(_ sender: UIButton) {
-        myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
+        if cheak == true {
+            
+         myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
+            cheak = false
+        }else if cheak == false{
+            myTimer.invalidate()
+            cheak = true
+        }
+        
     }
     
-    @IBAction func btStop(_ sender: UIButton) {
-        myTimer.invalidate()
-    }
+    
+
     
 
     @objc func doAnimation(){
