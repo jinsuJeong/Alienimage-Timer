@@ -12,6 +12,11 @@
 		7468BC16207498FE0095F771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC14207498FE0095F771 /* Main.storyboard */; };
 		7468BC18207498FE0095F771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC17207498FE0095F771 /* Assets.xcassets */; };
 		7468BC1B207498FE0095F771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC19207498FE0095F771 /* LaunchScreen.storyboard */; };
+		7468BC28207499760095F771 /* frame4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC23207499760095F771 /* frame4.png */; };
+		7468BC29207499760095F771 /* frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC24207499760095F771 /* frame1.png */; };
+		7468BC2A207499760095F771 /* frame5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC25207499760095F771 /* frame5.png */; };
+		7468BC2B207499760095F771 /* frame3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC26207499760095F771 /* frame3.png */; };
+		7468BC2C207499760095F771 /* frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7468BC27207499760095F771 /* frame2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		7468BC17207498FE0095F771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7468BC1A207498FE0095F771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7468BC1C207498FE0095F771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7468BC23207499760095F771 /* frame4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame4.png; sourceTree = "<group>"; };
+		7468BC24207499760095F771 /* frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame1.png; sourceTree = "<group>"; };
+		7468BC25207499760095F771 /* frame5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame5.png; sourceTree = "<group>"; };
+		7468BC26207499760095F771 /* frame3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame3.png; sourceTree = "<group>"; };
+		7468BC27207499760095F771 /* frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		7468BC0F207498FE0095F771 /* Alienimage Timer */ = {
 			isa = PBXGroup;
 			children = (
+				7468BC222074992D0095F771 /* image */,
 				7468BC10207498FE0095F771 /* AppDelegate.swift */,
 				7468BC12207498FE0095F771 /* ViewController.swift */,
 				7468BC14207498FE0095F771 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				7468BC1C207498FE0095F771 /* Info.plist */,
 			);
 			path = "Alienimage Timer";
+			sourceTree = "<group>";
+		};
+		7468BC222074992D0095F771 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				7468BC24207499760095F771 /* frame1.png */,
+				7468BC27207499760095F771 /* frame2.png */,
+				7468BC26207499760095F771 /* frame3.png */,
+				7468BC23207499760095F771 /* frame4.png */,
+				7468BC25207499760095F771 /* frame5.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +146,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7468BC29207499760095F771 /* frame1.png in Resources */,
+				7468BC28207499760095F771 /* frame4.png in Resources */,
+				7468BC2C207499760095F771 /* frame2.png in Resources */,
 				7468BC1B207498FE0095F771 /* LaunchScreen.storyboard in Resources */,
+				7468BC2B207499760095F771 /* frame3.png in Resources */,
 				7468BC18207498FE0095F771 /* Assets.xcassets in Resources */,
 				7468BC16207498FE0095F771 /* Main.storyboard in Resources */,
+				7468BC2A207499760095F771 /* frame5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
