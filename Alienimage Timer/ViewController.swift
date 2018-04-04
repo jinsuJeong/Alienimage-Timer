@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myImageView: UIImageView!
     
-    @IBOutlet weak var imageCounter: UILabel!
+      @IBOutlet weak var bt: UIButton!
+      @IBOutlet weak var imageCounter: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,26 +30,18 @@ class ViewController: UIViewController {
             
          myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(doAnimation), userInfo: nil, repeats: true)
             cheak = false
+            bt.setTitle("Stop", for: .normal)
         }else if cheak == false{
             myTimer.invalidate()
             cheak = true
+            bt.setTitle("Start", for: .normal)
         }
         
     }
     
-    
-
-    
 
     @objc func doAnimation(){
-      //  if counter == 5 {
-      //      counter = 1
-      // } else {
-      //      counter = counter + 1
-            
-      //  }
-        
-        
+      
         if counter == 5{
             direction = 0
         }
